@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="icono/encendiendo.png">
+    <title>404 - Página no encontrada | Yerson Mariqueo</title>
+    <meta name="description" content="Página no encontrada - Error 404">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Montserrat:wght@300;500;700;800&family=Roboto:wght@300;400;700&display=swap"
+        rel="stylesheet" media="print" onload="this.media='all'">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" media="print" onload="this.media='all'">
+    <style>
+        *,
+        *::before,
+        *::after {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        html {
+            font-size: 16px;
+        }
+        body {
+            font-family: 'Inter', 'Roboto', sans-serif;
+            background-color: #000000;
+            color: #F8FAFC;
+            line-height: 1.7;
+            overflow: hidden;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 20px;
+            background-image:
+                radial-gradient(ellipse 80% 60% at 50% 0%, rgba(255, 255, 255, 0.06) 0%, transparent 65%),
+                linear-gradient(180deg, #000000 0%, #050505 100%);
+        }
+        .error-code {
+            font-size: clamp(6rem, 15vw, 10rem);
+            font-weight: 800;
+            font-family: 'Montserrat', sans-serif;
+            background: linear-gradient(135deg, #FF6A00, #FF8F3D);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            line-height: 1;
+            margin-bottom: 8px;
+            position: relative;
+        }
+        .error-code::after {
+            content: '';
+            display: block;
+            width: 60px;
+            height: 3px;
+            background: #FF6A00;
+            margin: 16px auto 0;
+            border-radius: 2px;
+            box-shadow: 0 0 18px rgba(255, 106, 0, 0.25);
+        }
+        h1 {
+            font-size: clamp(1.3rem, 3vw, 1.8rem);
+            color: #FFFFFF;
+            font-weight: 700;
+            font-family: 'Montserrat', sans-serif;
+            margin-bottom: 12px;
+        }
+        p {
+            color: #94A3B8;
+            font-size: clamp(0.9rem, 2vw, 1.05rem);
+            max-width: 460px;
+            margin-bottom: 36px;
+        }
+        .btn-home {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            padding: 14px 34px;
+            background: #FF6A00;
+            color: #000000;
+            font-weight: 600;
+            font-size: 0.95rem;
+            border-radius: 50px;
+            text-decoration: none;
+            transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+            box-shadow: 0 4px 20px rgba(255, 106, 0, 0.3);
+        }
+        .btn-home:hover {
+            background: #FF8F3D;
+            transform: translateY(-3px);
+            box-shadow: 0 0 35px rgba(255, 106, 0, 0.40);
+        }
+        .btn-home i {
+            font-size: 1rem;
+        }
+        .icon-bolt {
+            font-size: 3rem;
+            color: #FF6A00;
+            margin-bottom: 10px;
+            opacity: 0.6;
+            animation: pulse 2s ease-in-out infinite;
+        }
+        @keyframes pulse {
+            0%,
+            100% {
+                opacity: 0.6;
+                transform: scale(1);
+            }
+            50% {
+                opacity: 1;
+                transform: scale(1.1);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="icon-bolt"><i class="fas fa-bolt"></i></div>
+    <div class="error-code">404</div>
+    <h1>Página no encontrada</h1>
+    <p>Parece que el circuito de esta página no está conectado. Volvamos al inicio para encontrar lo que buscas.</p>
+    <a href="index.html" class="btn-home"><i class="fas fa-arrow-left"></i> Volver al inicio</a>
+</body>
+
+</html>
